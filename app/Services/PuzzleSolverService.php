@@ -231,7 +231,6 @@ class PuzzleSolverService
                 $this->answerArray[$this->outerIndex][$this->innerIndex] = ' '.substr($answer, 0, 1);
             }
 
-            // $this->answerArray[$this->outerIndex] = implode(' ',$this->answerArray[$this->outerIndex])."<br/>";
             $this->answerArray[$this->outerIndex] = implode(' ',$this->answerArray[$this->outerIndex]);
         }
     }
