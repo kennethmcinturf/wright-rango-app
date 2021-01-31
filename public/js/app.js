@@ -14350,7 +14350,11 @@ var render = function() {
   return _c(
     "div",
     [
-      _c("h3", { staticClass: "text-center" }, [_vm._v("Puzzle Solver")]),
+      _c(
+        "h3",
+        { staticClass: "text-center", staticStyle: { "margin-top": "1em" } },
+        [_vm._v("Puzzle Solver")]
+      ),
       _vm._v(" "),
       _c(
         "form",
@@ -14520,6 +14524,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     props: ['answers']
@@ -14533,17 +14538,23 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    { attrs: { id: "answers" } },
-    _vm._l(_vm.answers, function(answer, index) {
-      return _c("span", { key: index }, [
-        _vm._v("\n        " + _vm._s(answer)),
-        _c("br")
-      ])
-    }),
-    0
-  )
+  return _vm.answers.length
+    ? _c(
+        "div",
+        { staticClass: "text-center", attrs: { id: "answers" } },
+        [
+          _c("h5", [_vm._v("Puzzle Answers")]),
+          _vm._v(" "),
+          _vm._l(_vm.answers, function(answer, index) {
+            return _c("span", { key: index }, [
+              _vm._v("\n        " + _vm._s(answer)),
+              _c("br")
+            ])
+          })
+        ],
+        2
+      )
+    : _vm._e()
 }
 var staticRenderFns = []
 render._withStripped = true

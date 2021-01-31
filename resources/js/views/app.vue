@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h3 class="text-center">Puzzle Solver</h3>
+        <h3 class="text-center" style="margin-top:1em;">Puzzle Solver</h3>
         <form @submit.prevent="sendPuzzle">
             <div class="form-group">
                 <label>Puzzle Strings</label>
