@@ -7,6 +7,7 @@ Thanks for giving the opportunity to continue in the interview process! This was
 - Navigate into the repo in your local machine, and run `composer install`
 - Run `npm run dev` to compile the Vue Components
 - I just put a local server up for deployment. Running `php artisan serve` will allow you to run the app locally from `<http://127.0.0.1:8000>`
+- Application also comes with some PHPUnit test, to test PuzzleSolver functionality, PuzzleTest.php. To run these, run `vendor/bin/phpunit --filter PuzzleTest` from the command line in the applications root directory.
 
 ## Application Overview
 - Users can enter comma seperated strings, representing the different puzzles and solutions, in both of the input boxes on the page. Default values are the examples inputs from the problem
